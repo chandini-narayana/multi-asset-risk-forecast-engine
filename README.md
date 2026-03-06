@@ -17,6 +17,41 @@ Traditional statistical risk models are combined with machine learning to improv
 
 ---
 
+System Architecture
+
+Market Data (yfinance)
+        │
+        ▼
+Price Data
+        │
+        ▼
+Log Returns
+        │
+        ▼
+Statistical Risk Engine
+ ├─ Rolling Volatility
+ ├─ EWMA Volatility
+ ├─ Covariance Matrix
+ └─ Portfolio Risk
+        │
+        ▼
+Feature Engineering
+ ├─ Lagged Returns
+ ├─ Squared Returns
+ ├─ Rolling Volatility
+ └─ EWMA Volatility
+        │
+        ▼
+Machine Learning Models
+ ├─ Linear Regression
+ └─ Random Forest
+        │
+        ▼
+Volatility Forecast
+        │
+        ▼
+Portfolio Risk Forecast
+
 ## Features
 
 Statistical Risk Engine
@@ -114,3 +149,4 @@ No GPU required
 Chandini Narayana
 
 ## Project Structure
+
