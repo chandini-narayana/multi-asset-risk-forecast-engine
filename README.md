@@ -17,8 +17,9 @@ Traditional statistical risk models are combined with machine learning to improv
 
 ---
 
-System Architecture
+## System Architecture
 
+```
 Market Data (yfinance)
         │
         ▼
@@ -51,6 +52,7 @@ Volatility Forecast
         │
         ▼
 Portfolio Risk Forecast
+```
 
 ## Features
 
@@ -149,4 +151,5 @@ No GPU required
 Chandini Narayana
 
 ## Project Structure
+
 
